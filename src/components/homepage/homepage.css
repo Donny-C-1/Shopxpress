@@ -1,0 +1,55 @@
+#homepage .categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 10rem));
+    gap: 2rem;
+    justify-content: center;
+}
+
+#homepage .categories > div {
+    background-color: blueviolet;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    aspect-ratio: 3 / 4;
+    border-radius: 12px;
+    padding-top: 1.5rem;
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+#homepage .ad1 {
+    background-color: red;
+    background-image: url("../../images/sette.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: auto;
+    padding: 4rem 0;
+}
+
+#homepage .ad1 > div {
+    float: right;
+    width: min(25rem, 90%);
+    background-color: var(--color-1);
+    color: var(--white);
+    padding: 2rem;
+    margin-right: 5rem;
+    aspect-ratio: 1 / 1;
+}
+
+#homepage .ad1 > div p:first-of-type {
+    font-size: 300%;
+    font-weight: bold;
+}
+
+#homepage .ad1 button {
+    font-family: "kristen ITC";
+    border: 1px solid var(--white);
+    background-color: transparent;
+    color: var(--white);
+    font-weight: bold;
+    letter-spacing: .1rem;
+    padding: .8rem 2rem;
+    border-radius: 20px;
+    margin-top: 2rem;
+}

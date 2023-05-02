@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --color-1: #153f2e;
+  --color-2: #FF6969;
+  --color-2: #A6D0DD;
+  --color-3: #FFD3B0;
+  --color-4: #FFF9DE;
+  --white: white;
+  --black: black;
+}
+
+body {
+  margin: 0;
+  font-family: "Comic Sans MS", "Kristen ITC", "Bell MT", Bahnschrift, Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

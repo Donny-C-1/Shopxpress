@@ -1,0 +1,181 @@
+/* * Info Bar * */
+.top-bar .info-bar {
+    display: flex;
+    background-color: var(--color-1);
+    color: var(--white);
+    padding: .5rem;
+    justify-content: space-between;
+}
+
+.top-bar .info-bar > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-bar .info-bar .center {
+    display: none;
+}
+
+.top-bar .info-bar .right {
+    justify-content: right;
+}
+
+.top-bar .info-bar .right > div {
+    display: flex;
+    gap: 1rem;
+}
+
+.top-bar .info-bar button {
+    background-color: transparent;
+    color: inherit;
+    border: 0;
+    transition: scale .2s ease-in;
+}
+
+.top-bar .info-bar button:hover {
+    cursor: pointer;
+    color: var(--color-2);
+}
+
+.top-bar .info-bar button:active {
+    scale: .9;
+}
+
+.top-bar .info-bar button span {
+    margin-left: .4rem;
+    font-size: 75%;
+    font-weight: bold;
+}
+
+/* * Navigation * */
+.top-nav {
+    background-color: var(--white);
+    /* display: flex; */
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+/* nav > :is(.sub-menu, .right) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+} */
+
+.top-nav .logo {
+    color: var(--color-1);
+    font-size: 1.5rem;
+    font-family: Calibri, "Calisto MT", "Bookman Old Style", corbel;
+}
+
+nav a {
+    /* display: inline-block; */
+    /* width: 20%; */
+    color: var(--color-1);
+    text-decoration: none;
+    text-align: center;
+}
+
+.sub-menu {
+    display: none;
+}
+
+.logo img {
+    width: 2rem;
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+
+.input-bar {
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    /* flex: 1rem; */
+}
+
+.input-bar input {
+    border: 0;
+    height: 100%;
+    padding: .5rem .5rem;
+}
+
+/* * Animated Menu Nav * */
+.animated-menu-button {
+    display: inline-block;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.animated-menu-button:active {
+    scale: .7;
+}
+
+.animated-menu-button > div {
+    height: .3rem;
+    width: 2.2rem;
+    margin: 6px 0;
+    background-color: black;
+    transition: rotate .5s, translate .5s ease .5s, opacity 0s ease .5s;
+}
+
+.open > div {
+    transition: translate .5s, rotate .5s ease .5s, opacity 0s ease .5s;
+}
+
+.open > div:nth-child(1) {
+    translate: 0 10px;
+    rotate: -45deg;
+}
+
+.open > div:nth-child(2) {
+    opacity: 0;
+}
+
+.open > div:nth-child(3) {
+    translate: 0 -10px;
+    rotate: 45deg;
+}
+
+@media screen and (min-width:35rem) {
+    .top-bar .info-bar {
+        padding: .5rem 1rem;
+        justify-content: unset;
+    }
+
+    .top-bar .info-bar > div {
+        flex: 1;
+        padding: 0 1rem;
+    }
+
+    .top-bar .info-bar .right > div {
+        gap: 2rem;
+    }
+
+    .top-bar .info-bar button span {
+        margin-left: .7rem;
+    }
+}
+
+@media screen and (min-width:56.25rem) {
+    .top-bar .info-bar {
+        padding: .5rem 2rem .5rem 1rem;
+    }
+    .top-bar .info-bar .right {
+        justify-content: space-between;
+    }
+
+    .top-bar .info-bar .center {
+        display: inline;
+    }
+    
+    .top-nav {
+        display: flex;
+    }
+
+    .top-nav .animated-menu-button {
+        display: none;
+    }
+}
