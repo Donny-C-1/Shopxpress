@@ -14,6 +14,4 @@
 body {
   margin: 0;
   font-family: "Comic Sans MS", "Kristen ITC", "Bell MT", Bahnschrift, Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
