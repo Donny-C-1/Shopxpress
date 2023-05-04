@@ -29,13 +29,22 @@ function Nav() {
                     <img src={logo} alt="logo" />
                     <span>ShopXpress</span>
                 </div>
-                <div className="category">Category</div>
+
+                <div className="category">
+                    Category
+                </div>
+                
                 <a href="/#">Deals</a>
                 <a href="/#">What's New</a>
                 <a href="/#">Delivery</a>
-                <div className="input-bar"><input type="text" /></div>
+                
+                <div className="input-bar">
+                    <input type="text" />
+                </div>
+                
                 <a href="/#">Account</a>
                 <a href="/#">Cart</a>
+
                 <div className="animated-menu-button" onClick={openMenu}>
                     <div></div>
                     <div></div>
