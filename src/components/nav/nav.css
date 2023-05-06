@@ -1,4 +1,9 @@
 /* * Info Bar * */
+.top-bar{
+    position: sticky;
+    top: 0;
+}
+
 .top-bar .info-bar {
     display: flex;
     background-color: var(--color-1);
@@ -157,6 +162,14 @@ nav a {
     .top-bar .info-bar button span {
         margin-left: .7rem;
     }
+    
+    /* adding flex display here too otherwise its loses responsiveness for smaller screens. */
+    .top-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media screen and (min-width:56.25rem) {
@@ -171,10 +184,14 @@ nav a {
         display: inline;
     }
     
+    /* adding flex display to make top-nav responsive */
     .top-nav {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-
+    
     .top-nav .animated-menu-button {
         display: none;
     }
