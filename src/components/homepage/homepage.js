@@ -1,11 +1,12 @@
 import "./homepage.css";
+import Item from "../item/item";
+import Products from "../../assets/products.json";
 import furniture from "../../images/furniture.png";
 import handbag from "../../images/handbag.png";
 import books from "../../images/books.png";
 import tech from "../../images/tech.png";
 import sneakers from "../../images/sneakers.png";
 import travel from "../../images/travel.png";
-import sette from "../../images/sette.png";
 
 function Homepage() {
     return (
@@ -28,7 +29,39 @@ function Homepage() {
                     <button>Learn More</button>
                 </div>
             </div>
+            <BestDeals />
         </div>
+    )
+}
+
+function BestDeals() {
+    const path = "/images/";
+    const Items = Products.slice(0, 8);
+    console.table(Items);
+    return (
+        <section className="best-deals-container">
+            <h2>Today's Best Deals For You</h2>
+            <div className="category-buttons">
+                <button>Gadgets</button>
+                <button>Fashion</button>
+                <button>Toys</button>
+                <button>Education</button>
+                <button>Beauty</button>
+                <button>Fitness</button>
+                <button>Furniture</button>
+                <button>Sneakers</button>
+            </div>
+            <div className="best-deals">
+                {Items.map((v, i) => (
+                    <Item
+                    key={i}
+                    src={path + v.imageSrc}
+                    itemName={v.itemName}
+                    itemDescription={v.itemDescription}
+                    price={v.price} />
+                ))}
+            </div>
+        </section>
     )
 }
 
