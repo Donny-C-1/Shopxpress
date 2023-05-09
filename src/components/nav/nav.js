@@ -34,16 +34,17 @@ function Nav() {
                     Category
                 </div>
                 
-                <a href="/#">Deals</a>
-                <a href="/#">What's New</a>
-                <a href="/#">Delivery</a>
-                
                 <div className="input-bar">
                     <input type="text" />
                 </div>
                 
-                <a href="/#">Account</a>
-                <a href="/#">Cart</a>
+                <div className="nav-links">
+                    <a href="/#">Deals</a>
+                    <a href="/#">What's New</a>
+                    <a href="/#">Delivery</a>
+                    <a href="/#">Account</a>
+                    <a href="/#">Cart</a>
+                </div>
 
                 <div className="animated-menu-button" onClick={openMenu}>
                     <div></div>
