@@ -1,3 +1,8 @@
+#homepage section {
+    padding: 0 min(2.5vw, 2rem);
+    margin: 4rem 0;
+}
+
 #homepage .categories {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(auto, 10rem));
@@ -52,4 +57,25 @@
     padding: .8rem 2rem;
     border-radius: 20px;
     margin-top: 2rem;
+}
+
+#homepage section.best-deals-container .category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+    margin: 1rem 0 2rem 0;
+}
+
+#homepage section.best-deals-container .category-buttons button {
+    padding: .7rem 1.4rem;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid #bbb;
+    cursor: pointer;
+}
+
+#homepage section .best-deals {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(max(20%, 10rem), 1fr));
+    gap: 1rem;
 }

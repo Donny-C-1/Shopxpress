@@ -249,7 +249,8 @@
     rotate: 45deg;
 }
 
-@media screen and (min-width:35rem) {
+/*  changed min-width from 36rem to 56.25rem to work on medium and small screens, without breaking for screens in between */
+@media screen and (max-width:56.25rem) {
     .top-bar .info-bar {
         padding: .5rem 1rem;
     }
@@ -273,8 +274,14 @@
     .top-nav .mobile-buttons .side-link {
         display: inline;
     }
+
+    /* hiding links for smaller screens to declutter nav bar */
+    .nav-links{
+        display: none;
+    }
 }
 
+/* changed min-width to max-width so it works on screens larger than 56.25rem */
 @media screen and (min-width:56.25rem) {
     .top-bar .info-bar {
         padding: .5rem 2rem .5rem 1rem;
