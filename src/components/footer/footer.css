@@ -24,8 +24,10 @@ footer h2 {
 }
 
 footer h2 .logo img {
+    width: 1.8rem;
     vertical-align: bottom;
     margin-right: .3rem;
+    translate: 0 -4px;
 }
 
 footer p, footer a {

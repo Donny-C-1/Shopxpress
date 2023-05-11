@@ -1,7 +1,8 @@
 header {
     background-image: url("../../images/hero1.jpg");
     background-size: cover;
-    background-position: 0% 20%;
+    background-position: center 20%;
+    /* background-position: center; */
 }
 
 header div {
