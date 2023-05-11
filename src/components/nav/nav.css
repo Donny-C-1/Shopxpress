@@ -126,6 +126,13 @@
 .top-nav .sub-menu .input-bar button[type="submit"] {
     border: 0;
     background-color: transparent;
+    padding: 0 .5rem;
+}
+
+.top-nav .sub-menu .input-bar button svg {
+    width: 1.2rem;
+    color: #777;
+    vertical-align: middle;
 }
 
 /* * Input Bar * */
@@ -152,10 +159,16 @@
     padding: .5rem 1rem;
 }
 
-.top-nav .mobile-input-bar input[type="submit"] {
+.top-nav .mobile-input-bar [type="submit"] {
     border: 0;
     padding: .5rem 1rem;
     cursor: pointer;
+}
+
+.top-nav .mobile-input-bar button svg {
+    width: 1.2rem;
+    vertical-align: middle;
+    color: #444;
 }
 
 /* * Mobile Menu Buttons * */
