@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./nav.css";
 import logo from "../../images/logo1.png";
 import { useState } from "react";
@@ -55,7 +56,7 @@ function Nav() {
                             </button>
                         </form>
                         <a href="/#" className="side-link">Account</a>
-                        <a href="/#" className="side-link">Cart</a>
+                        <Link to="/cart" className="side-link">Cart</Link>
                     </div>
 
                     <div className={"mobile-input-bar" + (searchVisibility ? " visible" : "")}>

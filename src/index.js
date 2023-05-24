@@ -7,3 +7,8 @@ root.render(
     <App />
 );
 
+const globalScope = {
+    path: "/images/"
+}
+
+export default globalScope;

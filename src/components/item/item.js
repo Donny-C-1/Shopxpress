@@ -1,20 +1,20 @@
 import "./item.css";
 
 function Item(props) {
-    console.log(props.price);
+    const { product: product } = props;
     return (
         <div className="product">
             <div className="product-image-container">
-                <img src={props.src} alt={props.itemName} width="100%" height="100%" />
+                <img src={props.src} alt={product.itemName} width="100%" height="100%" />
             </div>
-            <div class="product-info">
+            <div className="product-info">
                 <div className="top">
-                    <p className="product-name">{props.itemName}</p>
-                    <p className="product-price">₦ {props.price}</p>
+                    <p className="product-name">{product.itemName}</p>
+                    <p className="product-price">₦ {product.price}</p>
                 </div>
-                <p className="product-description">{props.itemDescription}</p>
+                <p className="product-description">{product.itemDescription}</p>
                 <div className="product-rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(121 reviews)</span></div>
-                <button className="add">Add to Cart</button>
+                <button className="add" onClick={props.addToCartFunction.bind(this, product)}>Add to Cart</button>
             </div>
         </div>
     )

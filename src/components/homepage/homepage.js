@@ -8,7 +8,7 @@ import tech from "../../images/tech.png";
 import sneakers from "../../images/sneakers.png";
 import travel from "../../images/travel.png";
 
-function Homepage() {
+function Homepage(props) {
     return (
         <div id="homepage">
             <h2>Shop Our Top Categories</h2>
@@ -29,15 +29,14 @@ function Homepage() {
                     <button>Learn More</button>
                 </div>
             </div>
-            <BestDeals />
+            <BestDeals addToCartFunction={props.addToCartFunction} />
         </div>
     )
 }
 
-function BestDeals() {
+function BestDeals(props) {
     const path = "/images/";
     const Items = Products.slice(0, 8);
-    console.table(Items);
     return (
         <section className="best-deals-container">
             <h2>Today's Best Deals For You</h2>
@@ -55,10 +54,13 @@ function BestDeals() {
                 {Items.map((v, i) => (
                     <Item
                     key={i}
+                    product={v}
                     src={path + v.imageSrc}
                     itemName={v.itemName}
                     itemDescription={v.itemDescription}
-                    price={v.price} />
+                    price={v.price}
+                    addToCartFunction={props.addToCartFunction}
+                     />
                 ))}
             </div>
         </section>
