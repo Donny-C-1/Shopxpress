@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Shopxpress/static/css/main.6ee8479d.css",
+    "main.js": "/Shopxpress/static/js/main.c64068d8.js",
+    "static/media/hero1.jpg": "/Shopxpress/static/media/hero1.c908d66674b250172e87.jpg",
+    "static/media/sette.png": "/Shopxpress/static/media/sette.b9a6332fc8d33a27f6d9.png",
+    "static/media/logo1.png": "/Shopxpress/static/media/logo1.e37cadd2908cec76e736.png",
+    "static/media/sneakers.png": "/Shopxpress/static/media/sneakers.6f08ae31da7e4f2e443d.png",
+    "static/media/handbag.png": "/Shopxpress/static/media/handbag.215170ae3fec6b1be096.png",
+    "static/media/furniture.png": "/Shopxpress/static/media/furniture.86cbd77f37ab333e1ff9.png",
+    "static/media/tech.png": "/Shopxpress/static/media/tech.cc1125506fc423614d07.png",
+    "static/media/books.png": "/Shopxpress/static/media/books.1236199717272513ca2e.png",
+    "static/media/travel.png": "/Shopxpress/static/media/travel.ecbd16ac7e6b3d69cb18.png",
+    "static/media/western-union2.svg": "/Shopxpress/static/media/western-union2.05c200d6ac9b539fa292132757161e0d.svg",
+    "static/media/amazon.svg": "/Shopxpress/static/media/amazon.e02ff81ea007a246d82ee89d0d9322aa.svg",
+    "static/media/paypal.svg": "/Shopxpress/static/media/paypal.84f29ebd2833941af8e508814a1d3d41.svg",
+    "static/media/verve.svg": "/Shopxpress/static/media/verve.a452a618608f0d9cf287fde3be7f8bac.svg",
+    "static/media/google-pay.svg": "/Shopxpress/static/media/google-pay.b17e4be1503985b8d823046e16fdc899.svg",
+    "static/media/stripe.svg": "/Shopxpress/static/media/stripe.d25244aa1a0f122be2de47d3cd3c87fd.svg",
+    "static/media/visa.svg": "/Shopxpress/static/media/visa.424e550ac3b6d733248777755389a835.svg",
+    "static/media/mastercard.svg": "/Shopxpress/static/media/mastercard.a926ed912779093767a0cd8687855a5f.svg",
+    "static/media/gift.svg": "/Shopxpress/static/media/gift.a9bcef06ead96692ec8893f5c09aaeb4.svg",
+    "static/media/briefcase.svg": "/Shopxpress/static/media/briefcase.2b600cf1c0a6c8b8e3e328798ae7cd74.svg",
+    "index.html": "/Shopxpress/index.html",
+    "static/media/help-circle.svg": "/Shopxpress/static/media/help-circle.9e9f9d15fac6f21781dcdca667e97481.svg",
+    "main.6ee8479d.css.map": "/Shopxpress/static/css/main.6ee8479d.css.map",
+    "main.c64068d8.js.map": "/Shopxpress/static/js/main.c64068d8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ee8479d.css",
+    "static/js/main.c64068d8.js"
+  ]
+}
